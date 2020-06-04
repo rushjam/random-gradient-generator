@@ -1,0 +1,82 @@
+:root {
+    --color-1:#ff99ff;
+    --color-2:#ff0066;
+    --text-color :linear-gradient( 78.1deg,  rgba(177,14,236,1) 5.5%, rgba(255,19,15,1) 92.8% );
+}
+
+* {
+    font-family: 'Lexend Tera', sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.main-text {
+    text-align: center;
+    background:  var(--text-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.screen-div {
+    height: 350px;
+    width: 350px;
+    border: 2px solid rgb(32, 32, 32);
+    border-radius: 30px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to top right, var(--color-1) 0%, var(--color-2) 100%);
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.192),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.288),
+    0 12.5px 10px rgba(0, 0, 0, 0.253),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.205)
+}
+
+.click-button {
+    height: 30px;
+    width: 200px;
+    color: white;
+    background-color: rgb(32, 32, 32);
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 30px;
+    box-shadow:
+    0 0 2.2px rgba(53, 53, 53, 0.192),
+    0 0  5.3px rgba(54, 54, 54, 0.288);
+    cursor: pointer;
+}
+
+.click-button:hover {
+    box-shadow:
+    0 0 2.2px rgba(54, 54, 54, 0.24),
+    0 0  5.3px rgba(53, 53, 53, 0.295),
+    0 0 6.2px rgba(53, 53, 53, 0.233),
+    0 0  7.3px rgba(54, 54, 54, 0.212);
+}
+.click-button:focus {
+    outline: none;
+    cursor: pointer;
+}
+.css-code-div {
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(212, 212, 212);
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 20px;
+    width: 360px;
+}
+
+.css-code {
+    font-family: courier, monospace !important;
+    /* padding: 0 3px; */
+}
